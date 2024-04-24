@@ -19,16 +19,14 @@ const Login = () => {
     const [password, setPassword] = useState('')
     
 const navigation = useNavigation()
-    //Have sameer look at it
+    //Have sameer look at 
     useEffect(() => {
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
                 navigation.replace("Panel")
             }
-        })
-   
-        return unsubscribe
-    }, [])
+        })   
+    })
 
     // const handleSignUp = () => {
     //     auth.createUserWithEmailAndPassword(email, password)
@@ -40,7 +38,7 @@ const navigation = useNavigation()
     // }
     
     const handleLogin = () => {
-        auth
+        firebase.auth()
         .signInWithEmailAndPassword(email, password)
         .then(userCredentials => {
             const user = userCredentials.user;

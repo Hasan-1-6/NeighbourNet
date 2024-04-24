@@ -6,6 +6,7 @@ import { Login } from "./screens";
 import { initializeApp } from '@firebase/app';
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
+
 const firebaseConfig = {
   apiKey: "AIzaSyA0zu28tbv2ShBRkaNmqbH5xU41SNNSkC0",
   authDomain: "fir-auth-1f5c0.firebaseapp.com",
@@ -15,7 +16,7 @@ const firebaseConfig = {
   appId: "1:918131323751:web:781bd31b9dba658ec0f5c2"
 }
 
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const Stack = createNativeStackNavigator()
 
