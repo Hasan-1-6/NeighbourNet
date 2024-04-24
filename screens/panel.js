@@ -1,5 +1,8 @@
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+} from '@react-navigation/drawer';
 import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import Issue from './issue';
 
@@ -17,6 +20,7 @@ const HomeScreen = ({ navigation }) => {
 const Panel = () => {
   return (
     <Drawer.Navigator initialRouteName='NeighbourNet'>
+      <DrawerItemList {...props} />
       <Drawer.Screen name='NeighbourNet' component={Issue} />
       <Drawer.Screen name='Issue' component={HomeScreen} />
     </Drawer.Navigator>
