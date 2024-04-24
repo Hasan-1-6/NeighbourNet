@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import { Text, View, SafeAreaView } from "react-native";
-
-const Panel = () => {
-    return (
-        <SafeAreaView>
-            <Text>hello its pannel</Text>
-        </SafeAreaView>
-    )
-}
-
-export default Panel;
-=======
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
@@ -46,4 +32,4 @@ const styles = StyleSheet.create({
 });
 
 export default Panel;
->>>>>>> 83ba57c7cf8dbca143037a68d73729f42088c5e0
+
