@@ -1,5 +1,5 @@
 import Login from "./login"
-import Panel from "./login"
+import Panel from "./panel"
 
 
 export{
